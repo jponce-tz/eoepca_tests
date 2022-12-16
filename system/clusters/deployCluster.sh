@@ -37,8 +37,8 @@ export KUBECONFIG="$TMP_KUBECONFIG"
 
 # Initialise flux in the cluster
 flux bootstrap github \
-  --owner=EOEPCA \
-  --repository=eoepca \
-  --branch="${BRANCH}" \
+  --owner=jponce-tz \
+  --repository=eoepca_tests \
+  --branch=develop \
   --team=Developers \
-  --path="system/clusters/${TARGET}/system"
+  --path="system/clusters/creodias/system"

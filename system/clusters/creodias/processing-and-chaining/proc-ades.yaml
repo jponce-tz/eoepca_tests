@@ -48,7 +48,7 @@ spec:
       enabled: true
       annotations: {}
       hosts:
-        - host: ades-open.develop.eoepca.org
+        - host: ades-open.89.202.251.199.nip.io
           paths:
             - path: /
               pathType: ImplementationSpecific    
@@ -102,10 +102,10 @@ spec:
       #    STAGEOUT_STORAGE_USERNAME: eoepca-storagecd 
       #    STAGEOUT_STORAGE_APIKEY: 4k8wMajA5ABaYdk
 
-      useResourceManager: "true"
+      useResourceManager: "false"
       resourceManagerWorkspacePrefix: "develop-user"
-      resourceManagerEndpoint: "https://workspace-api.develop.eoepca.org"
-      platformDomain: "https://auth.develop.eoepca.org"
+      resourceManagerEndpoint: "https://workspace-api.89.202.251.199.nip.io"
+      platformDomain: "https://auth.89.202.251.199.nip.io"
 
       pod_env_vars:
         yaml: "{}"

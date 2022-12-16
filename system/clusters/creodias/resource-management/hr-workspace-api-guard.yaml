@@ -18,8 +18,8 @@ spec:
     #---------------------------------------------------------------------------
     global:
       context: workspace-api
-      domain: develop.eoepca.org
-      nginxIp: 185.52.192.231
+      domain: 89.202.251.199.nip.io
+      nginxIp: 89.202.251.199
       certManager:
         clusterIssuer: letsencrypt
     #---------------------------------------------------------------------------
@@ -73,7 +73,7 @@ spec:
         credentialsSecretName: "rm-uma-user-agent"
       logging:
         level: "info"
-      unauthorizedResponse: 'Bearer realm="https://portal.develop.eoepca.org/oidc/authenticate/"'
+      unauthorizedResponse: 'Bearer realm="https://portal.89.202.251.199.nip.io/oidc/authenticate/"'
       # openAccess: true
     #---------------------------------------------------------------------------
     # END values
