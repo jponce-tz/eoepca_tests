@@ -48,7 +48,7 @@ spec:
       enabled: true
       annotations: {}
       hosts:
-        - host: ades-open.172.26.59.10.nip.io
+        - host: ades-open.89.202.251.199.nip.io
           paths:
             - path: /
               pathType: ImplementationSpecific    
@@ -104,8 +104,8 @@ spec:
 
       useResourceManager: "false"
       resourceManagerWorkspacePrefix: "develop-user"
-      resourceManagerEndpoint: "https://workspace-api.172.26.59.10.nip.io"
-      platformDomain: "https://auth.172.26.59.10.nip.io"
+      resourceManagerEndpoint: "https://workspace-api.89.202.251.199.nip.io"
+      platformDomain: "https://auth.89.202.251.199.nip.io"
 
       pod_env_vars:
         yaml: "{}"

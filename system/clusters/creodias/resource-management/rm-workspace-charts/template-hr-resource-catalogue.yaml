@@ -20,8 +20,8 @@ spec:
     ingress:
       enabled: false
       # name: resource-catalogue
-      # host: resource-catalogue-open.<user-namespace>.172.26.59.10.nip.io
-      # tls_host: resource-catalogue-open.<user-namespace>.172.26.59.10.nip.io
+      # host: resource-catalogue-open.<user-namespace>.89.202.251.199.nip.io
+      # tls_host: resource-catalogue-open.<user-namespace>.89.202.251.199.nip.io
       # tls_secret_name: resource-catalogue-open-tls
     pycsw:
       image:
@@ -30,7 +30,7 @@ spec:
         tag: "eoepca-staging"
       config:
         server:
-          url: "https://resource-catalogue.{{ workspace_name }}.172.26.59.10.nip.io"
+          url: "https://resource-catalogue.{{ workspace_name }}.89.202.251.199.nip.io"
         metadata:
           identification_title: Resource Catalogue - {{ workspace_name }}
           identification_abstract: Based on pycsw, a Python OGC CSW server implementation

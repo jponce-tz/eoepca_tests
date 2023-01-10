@@ -17,8 +17,8 @@ spec:
       # tag: v1.0
       # pullPolicy: Always
     global:
-      nginxIp: 172.26.59.10
-      domain: auth.172.26.59.10.nip.io
+      nginxIp: 89.202.251.199
+      domain: auth.89.202.251.199.nip.io
     volumeClaim:
       name: eoepca-userman-pvc
       create: false

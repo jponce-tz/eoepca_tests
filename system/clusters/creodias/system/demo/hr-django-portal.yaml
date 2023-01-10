@@ -14,7 +14,7 @@ spec:
         name: eoepca
         namespace: common
   values:
-    domain: 172.26.59.10.nip.io
+    domain: 89.202.251.199.nip.io
     authHost: auth
     configmap:
       user_prefix: develop-user

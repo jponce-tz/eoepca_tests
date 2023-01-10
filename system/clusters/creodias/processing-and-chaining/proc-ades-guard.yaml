@@ -18,8 +18,8 @@ spec:
     #---------------------------------------------------------------------------
     global:
       context: ades
-      domain: 172.26.59.10.nip.io
-      nginxIp: 172.26.59.10
+      domain: 89.202.251.199.nip.io
+      nginxIp: 89.202.251.199
       certManager:
         clusterIssuer: letsencrypt
     #---------------------------------------------------------------------------
@@ -77,7 +77,7 @@ spec:
         credentialsSecretName: "proc-uma-user-agent"
       logging:
         level: "info"
-      unauthorizedResponse: 'Bearer realm="https://auth.172.26.59.10.nip.io/oxauth/auth/passport/passportlogin.htm"'
+      unauthorizedResponse: 'Bearer realm="https://auth.89.202.251.199.nip.io/oxauth/auth/passport/passportlogin.htm"'
       openAccess: false
     #---------------------------------------------------------------------------
     # END values

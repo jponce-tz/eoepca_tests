@@ -15,11 +15,11 @@ spec:
   values:
     hub:
       extraEnv:
-        OAUTH_CALLBACK_URL: "https://jupyterhub.172.26.59.10.nip.io/hub/oauth_callback"
-        OAUTH2_USERDATA_URL: "https://auth.172.26.59.10.nip.io/oxauth/restv1/userinfo"
-        OAUTH2_TOKEN_URL: "https://auth.172.26.59.10.nip.io/oxauth/restv1/token"
-        OAUTH2_AUTHORIZE_URL: "https://auth.172.26.59.10.nip.io/oxauth/restv1/authorize"
-        OAUTH_LOGOUT_REDIRECT_URL: "https://auth.172.26.59.10.nip.io/oxauth/restv1/end_session?post_logout_redirect_uri=https://jupyterhub.172.26.59.10.nip.io"
+        OAUTH_CALLBACK_URL: "https://jupyterhub.89.202.251.199.nip.io/hub/oauth_callback"
+        OAUTH2_USERDATA_URL: "https://auth.89.202.251.199.nip.io/oxauth/restv1/userinfo"
+        OAUTH2_TOKEN_URL: "https://auth.89.202.251.199.nip.io/oxauth/restv1/token"
+        OAUTH2_AUTHORIZE_URL: "https://auth.89.202.251.199.nip.io/oxauth/restv1/authorize"
+        OAUTH_LOGOUT_REDIRECT_URL: "https://auth.89.202.251.199.nip.io/oxauth/restv1/end_session?post_logout_redirect_uri=https://jupyterhub.89.202.251.199.nip.io"
     ingress:
       enabled: true
       annotations:
@@ -29,11 +29,11 @@ spec:
         nginx.ingress.kubernetes.io/ssl-redirect: "false"
         cert-manager.io/cluster-issuer: letsencrypt
       hosts:
-        - host: jupyterhub.172.26.59.10.nip.io
+        - host: jupyterhub.89.202.251.199.nip.io
           paths:
             - path: /
       tls:
         - hosts:
-            - jupyterhub.172.26.59.10.nip.io
+            - jupyterhub.89.202.251.199.nip.io
           secretName: jupyterhub-tls
   interval: 1m0s
