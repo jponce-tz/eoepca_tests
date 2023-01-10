@@ -17,7 +17,7 @@ spec:
       name: eoepca-userman-pvc
       create: false
     config:
-      domain: auth.89.202.251.199.nip.io
+      domain: auth.172.26.59.10.nip.io
       volumeClaim:
         name: eoepca-userman-pvc
     opendj:
@@ -34,18 +34,18 @@ spec:
       volumeClaim:
         name: eoepca-userman-pvc
     global:
-      domain: auth.89.202.251.199.nip.io
-      nginxIp: 89.202.251.199
+      domain: auth.172.26.59.10.nip.io
+      nginxIp: 172.26.59.10
       namespace: um
     nginx:
       ingress:
         annotations:
           cert-manager.io/cluster-issuer: letsencrypt
         hosts:
-          - auth.89.202.251.199.nip.io
+          - auth.172.26.59.10.nip.io
         tls:
           - hosts:
-              - auth.89.202.251.199.nip.io
+              - auth.172.26.59.10.nip.io
             secretName: login-service-tls
   timeout: 25m0s
   interval: 1m0s

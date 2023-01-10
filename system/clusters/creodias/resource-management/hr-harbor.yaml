@@ -28,8 +28,8 @@ spec:
           nginx.ingress.kubernetes.io/proxy-body-size: "0"
 
         hosts:
-          core: harbor.89.202.251.199.nip.io
-          notary: harbor-notary.89.202.251.199.nip.io
+          core: harbor.172.26.59.10.nip.io
+          notary: harbor-notary.172.26.59.10.nip.io
 
     persistence:
       persistentVolumeClaim:
@@ -46,7 +46,7 @@ spec:
         trivy:
           storageClass: managed-nfs-storage
 
-    externalURL: https://harbor.89.202.251.199.nip.io
+    externalURL: https://harbor.172.26.59.10.nip.io
     # initial password for logging in with user "admin"
     harborAdminPassword: "eoepcaHarborx83NX3tVpSLAgg9UuusQ"
 

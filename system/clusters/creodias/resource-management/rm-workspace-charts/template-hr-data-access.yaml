@@ -23,7 +23,7 @@ spec:
       ingress:
         tls:
           - hosts:
-              - data-access.{{ workspace_name }}.89.202.251.199.nip.io
+              - data-access.{{ workspace_name }}.172.26.59.10.nip.io
 
       storage:
         data:
@@ -96,7 +96,7 @@ spec:
                 - path: "registrar_pycsw.backend.ItemBackend"
                   kwargs:
                     repository_database_uri: "postgresql://postgres:mypass@resource-catalogue-db/pycsw"
-                    ows_url: "https://data-access.{{ workspace_name }}.89.202.251.199.nip.io/ows"
+                    ows_url: "https://data-access.{{ workspace_name }}.172.26.59.10.nip.io/ows"
                     public_s3_url: "https://cf2.cloudferro.com:8080/{{ projectid }}:{{ bucket }}"
             collections:
               path: registrar.route.stac.CollectionRoute
@@ -124,7 +124,7 @@ spec:
                 - path: registrar_pycsw.backend.CWLBackend
                   kwargs:
                     repository_database_uri: "postgresql://postgres:mypass@resource-catalogue-db/pycsw"
-                    ows_url: "https://data-access.{{ workspace_name }}.89.202.251.199.nip.io/ows"
+                    ows_url: "https://data-access.{{ workspace_name }}.172.26.59.10.nip.io/ows"
                     public_s3_url: "https://cf2.cloudferro.com:8080/{{ projectid }}:{{ bucket }}"
 
       harvester:

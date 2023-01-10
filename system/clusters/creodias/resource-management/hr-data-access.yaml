@@ -38,10 +38,10 @@ spec:
           nginx.ingress.kubernetes.io/enable-cors: "true"
           cert-manager.io/cluster-issuer: letsencrypt
         hosts:
-          - host: data-access.89.202.251.199.nip.io
+          - host: data-access.172.26.59.10.nip.io
         tls:
           - hosts:
-              - data-access.89.202.251.199.nip.io
+              - data-access.172.26.59.10.nip.io
             secretName: data-access-tls
 
       storage:
@@ -711,7 +711,7 @@ spec:
             - path: registrar_pycsw.backend.ItemBackend
               kwargs:
                 repository_database_uri: postgresql://postgres:mypass@resource-catalogue-db/pycsw
-                ows_url: https://data-access.89.202.251.199.nip.io/ows
+                ows_url: https://data-access.172.26.59.10.nip.io/ows
           defaultSuccessQueue: seed_queue
           # routes:
           #   collections:

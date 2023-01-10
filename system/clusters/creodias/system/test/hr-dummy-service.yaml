@@ -22,12 +22,12 @@ spec:
         nginx.ingress.kubernetes.io/ssl-redirect: "false"
         cert-manager.io/cluster-issuer: letsencrypt
       hosts:
-        - host: dummy-service-open.89.202.251.199.nip.io
+        - host: dummy-service-open.172.26.59.10.nip.io
           paths:
             - path: /
               pathType: ImplementationSpecific
       tls:
         - hosts:
-            - dummy-service-open.89.202.251.199.nip.io
+            - dummy-service-open.172.26.59.10.nip.io
           secretName: dummy-service-open-tls
   interval: 1m0s

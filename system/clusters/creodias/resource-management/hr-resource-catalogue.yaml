@@ -32,8 +32,8 @@ spec:
     ingress:
       enabled: false
       # name: resource-catalogue
-      # host: resource-catalogue.89.202.251.199.nip.io
-      # tls_host: resource-catalogue.89.202.251.199.nip.io
+      # host: resource-catalogue.172.26.59.10.nip.io
+      # tls_host: resource-catalogue.172.26.59.10.nip.io
       # tls_secret_name: resource-catalogue-open-tls
     pycsw:
       image:
@@ -42,7 +42,7 @@ spec:
         tag: "eoepca-staging"
       config:
         server:
-          url: https://resource-catalogue.89.202.251.199.nip.io/
+          url: https://resource-catalogue.172.26.59.10.nip.io/
         manager:
           transactions: "true"
           allowed_ips: "*"
