@@ -37,8 +37,8 @@ export KUBECONFIG="$TMP_KUBECONFIG"
 
 # Initialise flux in the cluster
 flux bootstrap github \
+  --token-auth \
   --owner=jponce-tz \
   --repository=eoepca_tests \
   --branch=develop \
-  --team=Developers \
   --path="system/clusters/creodias/system"
