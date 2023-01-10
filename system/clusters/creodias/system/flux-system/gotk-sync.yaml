@@ -11,7 +11,7 @@ spec:
     branch: develop
   secretRef:
     name: flux-system
-  url: ssh://git@github.com/jponce-tz/eoepca_tests
+  url: https://github.com/jponce-tz/eoepca_tests.git
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization
